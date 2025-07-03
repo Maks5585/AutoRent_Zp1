@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://maks5585.github.io/AutoRent_Zp/sitemap.xml
