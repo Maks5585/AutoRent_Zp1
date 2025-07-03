@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оренда авто в Запоріжжі - Tesla Model S і Kia Sportage з водієм</title>
+    <meta name="description" content="Оренда авто з водієм у Запоріжжі для весіль, корпоративів і днів народження. Tesla Model S і Kia Sportage. Професійний сервіс, доступні ціни.">
+    <meta name="keywords" content="оренда авто Запоріжжя, прокат авто на весілля, оренда Tesla Kia, авто з водієм Запоріжжя, трансфер на весілля">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Оренда авто в Запоріжжі - Tesla і Kia з водієм">
+    <meta property="og:description" content="Преміум оренда авто для особливих подій у Запоріжжі">
+    <meta property="og:type" content="website">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #87CEEB;
+            --secondary-color: #F0FFFF;
+            --accent-color: #40E0D0;
+            --text-dark: #2C3E50;
+            --text-light: #6C7B7F;
+            --white: #FFFFFF;
+            --shadow-light: 0 4px 20px rgba(135, 206, 235, 0.15);
+            --shadow-medium: 0 8px 30px rgba(135, 206, 235, 0.2);
+            --border-radius: 15px;
+            --transition: all 0.3s ease;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: linear-gradient(135deg, var(--white) 0%, var(--secondary-color) 100%);
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--white);
+            box-shadow: var(--shadow-light);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: var(--transition);
+            padding: 0.5rem 1rem;
+            border-radius: var(--border-radius);
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+            background: var(--secondary-color);
+        }
+
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .nav-toggle span {
+            width: 25px;
+            height: 3px;
+            background: var(--primary-color);
+            margin: 3px 0;
+            transition: var(--transition);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+            padding: 120px 0 60px;
+            text-align: center;
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="50" cy="10" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            opacity: 0.5;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--white);
+            color: var(--primary-color);
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: var(--transition);
+            box-shadow: var(--shadow-medium);
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 40px rgba(135, 206, 235, 0.3);
+        }
+
+        /* Section Styling */
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--text-dark);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(to right, var(--primary-color), var(--accent-color));
+            border-radius: 2px;
+        }
+
+        /* Car Cards */
+        .cars-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .car-card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-light);
+            overflow: hidden;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .car-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .car-slider {
+            position: relative;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .car-images {
+            display: flex;
+            transition: transform 0.3s ease;
+            height: 100%;
+        }
+
+        .car-image {
+            min-width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.2rem;
+            font-weight: 600;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .slider-controls {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.9);
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+            box-shadow: var(--shadow-light);
+        }
+
+        .slider-controls:hover {
+            background: var(--white);
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        .slider-indicators {
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 8px;
+        }
+
+        .indicator {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .indicator.active {
+            background: var(--white);
+        }
+
+        .car-info {
+            padding: 2rem;
+        }
+
+        .car-info h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+
+        .car-description {
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .car-features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .feature {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .feature::before {
+            content: '✓';
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        .car-price {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+        }
+
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-light);
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-card h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+
+        /* Booking Form */
+        .booking-form {
+            background: var(--white);
+            padding: 3rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-light);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 2rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid var(--secondary-color);
+            border-radius: var(--border-radius);
+            font-size: 1rem;
+            transition: var(--transition);
+            font-family: inherit;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(135, 206, 235, 0.1);
+        }
+
+        .submit-button {
+            width: 100%;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: var(--white);
+            padding: 1rem;
+            border: none;
+            border-radius: var(--border-radius);
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .submit-button:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .form-note {
+            text-align: center;
+            margin-top: 1.5rem;
+            color: var(--text-light);
+            font-style: italic;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: var(--white);
+            padding: 3rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-light);
+            text-align: center;
+            margin: 2rem 0;
+            display: none;
+        }
+
+        .contact-section.active {
+            display: block;
+        }
+
+        .contact-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+
+        .contact-button {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+            box-shadow: var(--shadow-light);
+        }
+
+        .viber-button {
+            background: #665CAC;
+            color: var(--white);
+        }
+
+        .telegram-button {
+            background: #0088CC;
+            color: var(--white);
+        }
+
+        .call-button {
+            background: #28A745;
+            color: var(--white);
+        }
+
+        .contact-button:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .phone-number {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin: 1rem 0;
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: var(--border-radius);
+            transition: var(--transition);
+        }
+
+        .phone-number:hover {
+            background: var(--secondary-color);
+        }
+
+        /* FAQ Section */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--white);
+            margin-bottom: 1rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-light);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .faq-question:hover {
+            background: var(--secondary-color);
+        }
+
+        .faq-answer {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .faq-answer.active {
+            max-height: 200px;
+            padding: 1.5rem;
+        }
+
+        .faq-toggle {
+            font-size: 1.5rem;
+            transition: var(--transition);
+        }
+
+        .faq-item.active .faq-toggle {
+            transform: rotate(180deg);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--text-dark);
+            color: var(--white);
+            padding: 3rem 0 1rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-section a:hover {
+            color: var(--primary-color);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 1rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: var(--white);
+                box-shadow: var(--shadow-light);
+                flex-direction: column;
+                padding: 1rem;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-toggle {
+                display: flex;
+            }
+
+            .cars-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact-button {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .booking-form {
+                padding: 2rem 1rem;
+            }
+        }
+
+        /* Loading Animation */
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: var(--white);
+            animation: spin 1s ease-in-out infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Success Message */
+        .success-message {
+            background: #28A745;
+            color: var(--white);
+            padding: 1rem;
+            border-radius: var(--border-radius);
+            margin-top: 1rem;
+            display: none;
+        }
+
+        .success-message.show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#home" class="logo">🚗 AutoRent ZP</a>
+            <ul class="nav-links">
+                <li><a href="#home">Головна</a></li>
+                <li><a href="#cars">Автомобілі</a></li>
+                <li><a href="#services">Послуги</a></li>
+                <li><a href="#booking">Бронювання</a></li>
+                <li><a href="#contact">Контакти</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Оренда авто з водієм для вашого свята в Запоріжжі!</h1>
+                <p>Tesla або Kia — стиль, комфорт і надійність для весіль, днів народження та корпоративних подій</p>
+                <button class="cta-button" onclick="showContactSection()">Забронювати авто</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section (Hidden by default) -->
+    <div class="container">
+        <div id="contactSection" class="contact-section">
+            <h3>Для бронювання автівки, будь ласка, зверніться до менеджера:</h3>
+            <div class="contact-buttons">
+                <a href="viber://chat?number=+380685409636" class="contact-button viber-button">
+                    <span>📱</span> Написати у Viber
+                </a>
+                <a href="https://web.telegram.org/k/#@Lilia_Elanska" class="contact-button telegram-button">
+                    <span>✈️</span> Написати у Telegram
+                </a>
+                <a href="tel:+380685409636" class="contact-button call-button">
+                    <span>📞</span> Подзвонити
+                </a>
+            </div>
+            <div class="phone-number" onclick="copyPhone('+380685409636')">
+                📱 +380685409636 (натисніть, щоб скопіювати)
+            </div>
+        </div>
+    </div>
+
+    <!-- Cars Section -->
+    <section id="cars" class="section">
+        <div class="container">
+            <h2 class="section-title">Наші автомобілі</h2>
+            <div class="cars-grid">
+                <!-- Tesla Model S -->
+                <div class="car-card">
+                    <div class="car-slider">
+                        <div class="car-images" id="tesla-images">
+                            <div class="car-image" style="background-image: url('https://i.postimg.cc/sfm5pvxG/2025-07-02-204632.png');"></div>
+                            <div class="car-image" style="background-image: url('https://i.postimg.cc/VkCSH6fR/2025-07-02-204901.png');"></div>
+                            <div class="car-image" style="background-image: url('https://i.postimg.cc/WbQzrvGJ/image.png');"></div>
+                            <div class="car-image" style="background-image: url('https://i.postimg.cc/851j5mhK/2025-07-02-205113.png');"></div>
+                            <div class="car-image" style="background-image: url('https://i.postimg.cc/xTbT94wj/image.png');"></div>
+                            <div class="car-image" style="background-image: url('https://i.postimg.cc/9Q5X0B2d/image.png');"></div>
+                            <div class="car-image" style="background-image: url('https://i.postimg.cc/nh4FDQV6/image.png');"></div>
+                            <div class="car-image" style="background-image: url('https://i.postimg.cc/PqdtzrPN/image.png');"></div>
+                            <div class="car-image" style="background-image: url('https://i.postimg.cc/pdkP0bFC/image.png');"></div>
+                            <div class="car-image" style="background-image: url('https://i.postimg.cc/qRR4SbcT/image.png');"></div>
+                        </div>
+                        <button class="slider-controls prev" onclick="changeSlide('tesla', -1)">❮</button>
+                        <button class="slider-controls next" onclick="changeSlide('tesla', 1)">❯</button>
+                        <div class="slider-indicators">
+                            <div class="indicator active" onclick="goToSlide('tesla', 0)"></div>
+                            <div class="indicator" onclick="goToSlide('tesla', 1)"></div>
+                            <div class="indicator" onclick="goToSlide('tesla', 2)"></div>
+                            <div class="indicator" onclick="goToSlide('tesla', 3)"></div>
+                            <div class="indicator" onclick="goToSlide('tesla', 4)"></div>
+                            <div class="indicator" onclick="goToSlide('tesla', 5)"></div>
+                            <div class="indicator" onclick="goToSlide('tesla', 6)"></div>
+                            <div class="indicator" onclick="goToSlide('tesla', 7)"></div>
+                            <div class="indicator" onclick="goToSlide('tesla', 8)"></div>
+                            <div class="indicator" onclick="goToSlide('tesla', 9)"></div>
+                        </div>
+                    </div>
+                    <div class="car-info">
+                        <h3>Tesla Model S</h3>
+                        <p class="car-description">
+                            Електричний преміум-седан з неперевершеним стилем та технологіями. 
+                            Ідеальний вибір для весіль та особливих подій, де важливі статус і комфорт.
+                        </p>
+                        <div class="car-features">
+                            <div class="feature">Водій входить у вартість</div>
+                            <div class="feature">Весілля</div>
+                            <div class="feature">Корпоративи</div>
+                            <div class="feature">Дні народження</div>
+                            <div class="feature">Електричний двигун</div>
+                            <div class="feature">Преміум-клас</div>
+                        </div>
+                        <div class="car-price">від 700 грн/год</div>
+                        <button class="cta-button" onclick="showContactSection()">Забронювати Tesla</button>
+                    </div>
+                </div>
+
+                <!-- Kia Sportage -->
+                <div class="car-card">
+                    <div class="car-slider">
+                        <div class="car-images" id="kia-images">
+                            <div class="car-image" style="background-image: url('https://i.postimg.cc/2yW699m5/image.png');"></div>
+                            <div class="car-image">Kia Sportage - Фото 2</div>
+                            <div class="car-image">Kia Sportage - Фото 3</div>
+                            <div class="car-image">Kia Sportage - Фото 4</div>
+                            <div class="car-image">Kia Sportage - Фото 5</div>
+                        </div>
+                        <button class="slider-controls prev" onclick="changeSlide('kia', -1)">❮</button>
+                        <button class="slider-controls next" onclick="changeSlide('kia', 1)">❯</button>
+                        <div class="slider-indicators">
+                            <div class="indicator active" onclick="goToSlide('kia', 0)"></div>
+                            <div class="indicator" onclick="goToSlide('kia', 1)"></div>
+                            <div class="indicator" onclick="goToSlide('kia', 2)"></div>
+                            <div class="indicator" onclick="goToSlide('kia', 3)"></div>
+                            <div class="indicator" onclick="goToSlide('kia', 4)"></div>
+                        </div>
+                    </div>
+                    <div class="car-info">
+                        <h3>Kia Sportage</h3>
+                        <p class="car-description">
+                            Сучасний кросовер з стильним дизайном та просторим салоном. 
+                            Відмінний вибір для сімейних свят та корпоративних заходів.
+                        </p>
+                        <div class="car-features">
+                            <div class="feature">Водій входить у вартість</div>
+                            <div class="feature">Весілля</div>
+                            <div class="feature">Корпоративи</div>
+                            <div class="feature">Дні народження</div>
+                            <div class="feature">Просторий салон</div>
+                            <div class="feature">Комфорт-клас</div>
+                        </div>
+                        <div class="car-price">від 500 грн/год</div>
+                        <button class="cta-button" onclick="showContactSection()">Забронювати Kia</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section-title">Наші послуги</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">💒</div>
+                    <h3>Оренда авто на весілля</h3>
+                    <p>Створимо незабутню атмосферу для вашого особливого дня</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏢</div>
+                    <h3>Трансфер на корпоратив</h3>
+                    <p>Професійний трансфер для ділових заходів та корпоративних подій</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎂</div>
+                    <h3>Дні народження</h3>
+                    <p>Зробимо ваше свято яскравим та незабутнім</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🗺️</div>
+                    <h3>Поїздки містом</h3>
+                    <p>Комфортні поїздки по Запоріжжю з досвідченим водієм</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">👨‍💼</div>
+                    <h3>Авто з водієм</h3>
+                    <p>Професійні водії з багаторічним досвідом</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="section">
+        <div class="container">
+            <h2 class="section-title">Форма бронювання</h2>
+            <div class="booking-form">
+                <form id="bookingForm">
+                    <div class="form-group">
+                        <label for="name">Ім'я *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Номер телефону *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Дата та подія *</label>
+                        <input type="datetime-local" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="car">Вибір авто *</label>
+                        <select id="car" name="car" required>
+                            <option value="">Оберіть автомобіль</option>
+                            <option value="Tesla Model S">Tesla Model S</option>
+                            <option value="Kia Sportage">Kia Sportage</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Додаткові побажання</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Розкажіть про ваше свято..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">
+                        <span id="submitText">Надіслати запит</span>
+                        <span id="submitLoading" class="loading" style="display: none;"></span>
+                    </button>
+                    <div id="successMessage" class="success-message">
+                        ✅ Ваш запит успішно надіслано! Менеджер зв'яжеться з вами найближчим часом.
+                    </div>
+                </form>
+                <p class="form-note">
+                    Уточнити деталі? Зв'яжіться з менеджером телефоном або в месенджері!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Контакти</h2>
+            <div class="contact-section active">
+                <h3>Зв'яжіться з нами зручним способом:</h3>
+                <div class="contact-buttons">
+                    <a href="viber://chat?number=+380685409636" class="contact-button viber-button">
+                        <span>📱</span> Написати у Viber
+                    </a>
+                    <a href="https://web.telegram.org/k/#@Lilia_Elanska" class="contact-button telegram-button">
+                        <span>✈️</span> Написати у Telegram
+                    </a>
+                    <a href="tel:+380685409636" class="contact-button call-button">
+                        <span>📞</span> Подзвонити
+                    </a>
+                </div>
+                <div class="phone-number" onclick="copyPhone('+380685409636')">
+                    📱 +380685409636 (натисніть, щоб скопіювати)
+                </div>
+                <p>📧 Email: <a href="mailto:c211@elint.com.ua">c211@elint.com.ua</a></p>
+                <p>📍 Запоріжжя, Україна</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section">
+        <div class="container">
+            <h2 class="section-title">Питання та відповіді</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Чи можна орендувати авто без водія?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ні, ми надаємо послуги оренди авто виключно з водієм. Це гарантує вашу безпеку та комфорт під час поїздки, а також дозволяє вам повністю насолоджуватися святом.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Чи можна забронювати на кілька годин?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Так, ми працюємо як з погодинною орендою (мінімум 1 години), так і з довготривалою орендою на цілий день. Вартість розраховується індивідуально залежно від тривалості та маршруту.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Чи виїжджаєте за межі Запоріжжя?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Так, ми можемо організувати поїздки за межі міста. Вартість та умови обговорюються індивідуально залежно від відстані та тривалості поїздки.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Чи можна прикрасити авто на весілля?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Звичайно! Ми допоможемо прикрасити автомобіль стрічками, квітами та іншими весільними прикрасами за ваш рахунок. Обговоріть деталі з нашим менеджером при бронюванні.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AutoRent ZP</h3>
+                    <p>Преміум оренда авто з водієм у Запоріжжі для ваших особливих подій</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакти</h3>
+                    <p>📱 +380685409636</p>
+                    <p>📧 c211@elint.com.ua</p>
+                    <p>📍 Запоріжжя, Україна</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Послуги</h3>
+                    <p>Tesla Model S</p>
+                    <p>Kia Sportage</p>
+                    <p>Авто з водієм</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AutoRent ZP. Всі права захищені.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module">
+        // Navigation Toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Car Slider Functionality
+        let currentSlides = {
+            tesla: 0,
+            kia: 0
+        };
+
+        window.changeSlide = function(car, direction) {
+            const maxSlides = car === 'tesla' ? 10 : 5;
+            currentSlides[car] += direction;
+            
+            if (currentSlides[car] < 0) {
+                currentSlides[car] = maxSlides - 1;
+            } else if (currentSlides[car] >= maxSlides) {
+                currentSlides[car] = 0;
+            }
+            
+            updateSlider(car);
+        };
+
+        window.goToSlide = function(car, slide) {
+            currentSlides[car] = slide;
+            updateSlider(car);
+        };
+
+        function updateSlider(car) {
+            const images = document.getElementById(`${car}-images`);
+            const indicators = images.parentElement.querySelectorAll('.indicator');
+            
+            images.style.transform = `translateX(-${currentSlides[car] * 100}%)`;
+            
+            indicators.forEach((indicator, index) => {
+                indicator.classList.toggle('active', index === currentSlides[car]);
+            });
+        }
+
+        // Contact Section Toggle
+        window.showContactSection = function() {
+            const contactSection = document.getElementById('contactSection');
+            contactSection.classList.add('active');
+            contactSection.scrollIntoView({ behavior: 'smooth' });
+        };
+
+        // Copy Phone Number
+        window.copyPhone = function(phone) {
+            navigator.clipboard.writeText(phone).then(() => {
+                alert('Номер телефону скопійовано: ' + phone);
+            }).catch(() => {
+                alert('Номер телефону: ' + phone);
+            });
+        };
+
+        // FAQ Toggle
+        window.toggleFAQ = function(element) {
+            const faqItem = element.parentElement;
+            const answer = faqItem.querySelector('.faq-answer');
+            const toggle = element.querySelector('.faq-toggle');
+            
+            faqItem.classList.toggle('active');
+            answer.classList.toggle('active');
+            toggle.textContent = faqItem.classList.contains('active') ? '−' : '+';
+        };
+
+        // Booking Form Submission
+        document.getElementById('bookingForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const submitText = document.getElementById('submitText');
+            const submitLoading = document.getElementById('submitLoading');
+            const successMessage = document.getElementById('successMessage');
+            
+            // Show loading
+            submitText.style.display = 'none';
+            submitLoading.style.display = 'inline-block';
+            
+            // Get form data
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            // Format message for Telegram
+            const message = `🚗 НОВИЙ ЗАПИТ НА ОРЕНДУ АВТО\n\n` +
+                          `👤 Ім'я: ${data.name}\n` +
+                          `📱 Телефон: ${data.phone}\n` +
+                          `📅 Дата: ${data.date}\n` +
+                          `🚙 Авто: ${data.car}\n` +
+                          `💬 Побажання: ${data.message || 'Не вказано'}\n\n` +
+                          `⏰ Час запиту: ${new Date().toLocaleString('uk-UA')}`;
+            
+            try {
+                // Send to Telegram
+                const telegramResponse = await fetch('/send.php', {
+                     method: 'POST',
+                     headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                });
+
+                if (telegramResponse.ok) {
+                    // Show success message
+                    successMessage.classList.add('show');
+                    this.reset();
+                    
+                    // Hide success message after 5 seconds
+                    setTimeout(() => {
+                        successMessage.classList.remove('show');
+                    }, 5000);
+                } else {
+                    throw new Error('Failed to send message');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Помилка відправки повідомлення. Будь ласка, зв\'яжіться з нами безпосередньо.');
+            } finally {
+                // Hide loading
+                submitText.style.display = 'inline';
+                submitLoading.style.display = 'none';
+            }
+        });
+
+        // Auto-hide mobile menu on scroll
+        let lastScrollTop = 0;
+        window.addEventListener('scroll', function() {
+            const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+            if (currentScroll > lastScrollTop && currentScroll > 100) {
+                navLinks.classList.remove('active');
+            }
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+        });
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth page load
+            document.body.style.opacity = '0';
+            document.body.style.transition = 'opacity 0.5s ease';
+            setTimeout(() => {
+                document.body.style.opacity = '1';
+            }, 100);
+        });
+    </script>
+</body>
+</html>
